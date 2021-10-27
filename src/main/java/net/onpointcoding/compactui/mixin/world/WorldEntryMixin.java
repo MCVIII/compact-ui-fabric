@@ -89,11 +89,6 @@ public abstract class WorldEntryMixin {
             if (bl) {
                 this.screen.setTooltip(this.client.textRenderer.wrapLines(LOCKED_TEXT, 175));
             }
-        } else if (this.level.isPreWorldHeightChangeVersion()) {
-            DrawableHelper.drawTexture(matrices, x, y, (int) oneThird32, (int) oneThird32, 96.0F, 32.0F, 32, 32, 256, 256);
-            if (bl) {
-                this.screen.setTooltip(this.client.textRenderer.wrapLines(PRE_WORLDHEIGHT_TEXT, 175));
-            }
         } else if (this.level.isDifferentVersion()) {
             DrawableHelper.drawTexture(matrices, x, y, (int) oneThird32, (int) oneThird32, 32.0F, (float) j, 32, 32, 256, 256);
             if (this.level.isFutureLevel()) {
